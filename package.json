@@ -1,0 +1,24 @@
+{
+  "name": "slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/runtime-corejs2": "^7.14.8",
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.36.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5"
+  },
+  "scripts": {
+    "start": "npm run clean && parcel src/*.html --out-dir dev -p 4200",
+    "build": "npm run clean && parcel build src/*.html --out-dir build --public-url ./",
+    "clean": "rimraf ./dev && rimraf ./.cache rimraf ./build "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

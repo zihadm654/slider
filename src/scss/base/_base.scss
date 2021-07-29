@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 70%;
+  @include media(sm) {
+    font-size: 37.51%;
+  }
+  @include media(md) {
+    font-size: 44%;
+  }
+  @include media(lg) {
+    font-size: 56.25%;
+  }
+  @include media(xlg) {
+    font-size: 64.5%;
+  }
+}
+body {
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+a {
+  color: $dominant;
+}
+span {
+  color: $secondaryColor;
+  font-weight: 700;
+}
